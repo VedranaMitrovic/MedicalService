@@ -16,6 +16,7 @@ namespace MedicalService.Page
         public IWebElement Username => driver.FindElement(By.Id("txt-username"));
         public IWebElement Password => driver.FindElement(By.Id("txt-password"));
         public IWebElement LoginButton => driver.FindElement(By.Id("btn-login"));
+        public IWebElement UserNotLoggedIn => driver.FindElement(By.CssSelector(".text-danger"));
 
         public void Login(string user, string pass)
         {
